@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  savapage-ubuntu18.04:
+    ports:
+      - '8631:8631'
+      - '8632:8632'
+    volumes:
+      - './:/workspace'
+    image: 'savapage-ubuntu18.04:latest'
+    restart: always
